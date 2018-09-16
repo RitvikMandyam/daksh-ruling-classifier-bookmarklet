@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.daksh-loader {
+    height: 4px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #ddd
+}
+
+.daksh-loader:before {
+    display: block;
+    position: absolute;
+    content: "";
+    left: -200px;
+    width: 200px;
+    height: 4px;
+    background-color: #2980b9;
+    animation: daksh-loading 2s linear infinite
+}
+
+@keyframes daksh-loading {
+    from {
+        left: -200px;
+        width: 30%
+    }
+    50% {
+        width: 30%
+    }
+    70% {
+        width: 70%
+    }
+    80% {
+        left: 50%
+    }
+    95% {
+        left: 120%
+    }
+    to {
+        left: 100%
+    }
+}
+
+.daksh-ai-wrapper {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    padding: 16px;
+    top: 0;
+    border: 1px solid #2980b9;
+}
+
+.daksh-ai-wrapper > span {
+    padding: 4px 8px ;
+}
+
+.fix-dims {
+    width: auto;
+    height: auto;
+    right: 0;
+    padding: 0;
+}
+
+.daksh-ai-url {
+    float: right;
+    padding-left: 8px;
+}
+
+.daksh-ai-results {
+    border-collapse: collapse;
+    border-style: hidden;
+    margin: 8px;
+}
+
+.daksh-ai-results td {
+    border: 1px solid #dddddd;
+    padding: 4px;
+}
+
+.daksh-close-button {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    opacity: 0.3;
+}
+.daksh-close-button:hover {
+    opacity: 1;
+}
+.daksh-close-button:before, .daksh-close-button:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 17px;
+    width: 2px;
+    background-color: #333;
+}
+.daksh-close-button:before {
+    transform: rotate(45deg);
+}
+.daksh-close-button:after {
+    transform: rotate(-45deg);
+}
+
+.daksh-header {
+    color: white;
+    background-color: #2980b9;
+    padding: 8px;
+}

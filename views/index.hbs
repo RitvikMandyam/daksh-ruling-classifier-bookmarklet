@@ -1,0 +1,47 @@
+<div class="daksh-header">
+    <span> Daksh Rulings Classifier ({{ runtime }}s)</span>
+    <a href="javascript:(function(){$('.daksh-ai-wrapper').remove()})()" class="daksh-close-button" ></a>
+</div>
+<table class="daksh-ai-results">
+    <tr>
+        <td>Appeal Case</td>
+        <td>{{ appeal_case }}</td>
+    </tr>
+    <tr>
+        <td>Case Type</td>
+        <td>{{ case_type }}</td>
+    </tr>
+    <tr>
+        <td>Costs Imposed</td>
+        <td>{{ costs_imposed }}</td>
+    </tr>
+    <tr>
+        <td>Decision</td>
+        <td>{{ decision }}</td>
+    </tr>
+    <tr>
+        <td>Govt. Involved</td>
+        <td>{{ govt_involved }}</td>
+    </tr>
+    <tr>
+        <td>Govt. Party</td>
+        <td>{{ govt_party }}</td>
+    </tr>
+    <tr>
+        <td>Number of Judges</td>
+        <td>{{ number_of_judges }}</td>
+    </tr>
+    <tr>
+        <td>Order or Judgement</td>
+        <td>{{ order_or_judgement }}</td>
+    </tr>
+    <tr>
+        <td>Writ Petition</td>
+        <td>{{ writ_petition }}</td>
+    </tr>
+</table>
+<span>Don't agree with our classifications?
+    <a href="mailto:rulings-classifier@dakshindia.org?Subject=Your%20classifier%20SUCKS%21&body={{ origin_url }}%7C{{ appeal_case }}%7C{{ case_type }}%7C{{ costs_imposed }}%7C{{ decision }}%7C{{ govt_involved }}%7C{{ govt_party }}%7C{{ number_of_judges }}%7C{{ order_or_judgement }}%7C{{ writ_petition }}">
+    Let us know.
+    </a>
+</span>
