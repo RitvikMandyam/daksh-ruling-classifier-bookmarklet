@@ -5,7 +5,7 @@ var request = require('request');
 /* GET home page. */
 router.get('/', function(req, res, next) {
     const origin_url = req.query.case_url;
-    if ((/https:\/\/indiankanoon\.org\/doc\/\d{8}/g).test(origin_url)) {
+    if ((/https:\/\/indiankanoon\.org\/doc/g).test(origin_url)) {
         const start_time = (new Date()).getTime() / 1000;
         request.post('https://cl.dakshindia.org/predict', (err, resp, body) => {
             if (err) {
