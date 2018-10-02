@@ -1,5 +1,5 @@
 <div class="daksh-header">
-    <span> Daksh Rulings Classifier ({{ runtime }}s)</span>
+    <span> Daksh Rulings Classifier ({{word_count}} words in {{ runtime }}s)</span>
     <a href="javascript:(function(){$('.daksh-ai-wrapper').remove()})()" class="daksh-close-button" ></a>
 </div>
 <table class="daksh-ai-results">
@@ -38,6 +38,18 @@
     <tr>
         <td>Writ Petition</td>
         <td>{{ writ_petition }}</td>
+    </tr>
+    <tr>
+        <td>Subject Matter</td>
+        <td>{{ subject_matter }}</td>
+    </tr>
+    <tr>
+        <td>Petitioner Type</td>
+        <td>{{ petitioner_type }}</td>
+    </tr>
+    <tr>
+        <td>Fundamental rights involved</td>
+        <td>{{ fundamental_rights_involved }}</td>
     </tr>
 </table>
 <span>Don't agree with our classifications?
